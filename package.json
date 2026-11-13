@@ -1,0 +1,9 @@
+{
+  "name": "surf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/proxy.js",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "oceansideTide": {
+    "station": "9410396",
+    "probedAt": "2026-11-13",
+    "result": "no Oceanside predictions",
+    "detail": "NOAA CO-OPS returned no hilo predictions for 9410396 at MLLW and at MSL. The curve is La Jolla 9410230. No harbor offset is applied."
+  },
+  "mopForecast": {
+    "probedAt": "2026-11-13",
+    "found": true,
+    "pattern": "https://thredds.cdip.ucsd.edu/thredds/dodsC/cdip/model/MOP_alongshore/{id}_forecast.nc",
+    "resolution": "PT03H",
+    "timeCoverage": ["2026-11-09T23:30:00Z", "2026-11-19T23:30:00Z"],
+    "note": "A MOP forecast file is published beside each nowcast. The 48-hour strip uses it and does not apply the buoy ratio. Bias-corrected ECMWF WAM is the fallback when that file is missing."
+  },
+  "weatherPoint": { "lat": 33.08, "lon": -117.31, "name": "mid-county" },
+  "buoys": [
+    {
+      "id": "46224",
+      "cdip": "045",
+      "name": "Oceanside Offshore",
+      "short": "Oceanside",
+      "lat": 33.178,
+      "lon": -117.472
+    },
+    {
+      "id": "46225",
+      "cdip": "100",
+      "name": "Torrey Pines Outer",
+      "short": "Torrey",
+      "lat": 32.933,
+      "lon": -117.391
+    }
+  ],
+  "breaks": [
+    {
+      "id": "harbor",
+      "name": "Oceanside Harbor",
+      "mop": "D0929",
+      "lat": 33.19553,
+      "lon": -117.40076,
+      "shoreNormal": 177.93,
+      "sizeFt": [2, 6],
+      "note": "Jetty. Wants more north in the swell than the beaches south of it.",
+      "tideNote": "prefers mid. More sensitive to direction than to the exact hour of the tide.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "pier",
+      "name": "Oceanside Pier",
+      "mop": "D0906",
+      "lat": 33.18916,
+      "lon": -117.39236,
+      "shoreNormal": 232.02,
+      "sizeFt": [2, 6],
+      "note": "Beachbreak. Afternoon sea breeze is onshore.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "tamarack",
+      "name": "Tamarack",
+      "mop": "D0843",
+      "lat": 33.14444,
+      "lon": -117.35214,
+      "shoreNormal": 238.0,
+      "sizeFt": [2, 6],
+      "note": "Carlsbad beach. A check that the model is not one number for the whole county.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "batiquitos",
+      "name": "Batiquitos",
+      "mop": "D0768",
+      "lat": 33.08514,
+      "lon": -117.31908,
+      "shoreNormal": 253.0,
+      "sizeFt": [2, 6],
+      "note": "Lagoon mouth. Not Beacons.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight Beach",
+      "mop": "D0722",
+      "lat": 33.04557,
+      "lon": -117.30489,
+      "shoreNormal": 254.24,
+      "sizeFt": [2, 6],
+      "note": "Encinitas beach, a mile from the point and often a different height.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "swamis",
+      "name": "Swami's",
+      "mop": "D0709",
+      "lat": 33.03238,
+      "lon": -117.29996,
+      "shoreNormal": 229.52,
+      "sizeFt": [2, 6],
+      "note": "Reef and point.",
+      "tideNote": "prefers mid, incoming, still workable higher when the period is long.",
+      "tidePref": { "band": "mid", "phase": "incoming", "longPeriodOkHigh": true }
+    },
+    {
+      "id": "cardiff",
+      "name": "Cardiff Reef",
+      "mop": "D0683",
+      "lat": 33.01262,
+      "lon": -117.28884,
+      "shoreNormal": 242.03,
+      "sizeFt": [2, 6],
+      "note": "Reef. Tide window is tighter than the beach.",
+      "tideNote": "prefers low to mid. High tide is the usual miss.",
+      "tidePref": { "band": "low-mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "fletcher",
+      "name": "Fletcher Cove",
+      "mop": "D0655",
+      "lat": 32.99053,
+      "lon": -117.28276,
+      "shoreNormal": 261.01,
+      "sizeFt": [2, 6],
+      "note": "Solana Beach. Bluff-backed beach.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "fifteenth",
+      "name": "15th Street, Del Mar",
+      "mop": "D0618",
+      "lat": 32.95819,
+      "lon": -117.27559,
+      "shoreNormal": 264.53,
+      "sizeFt": [2, 6],
+      "note": "Beach, with the river mouth on big south swells.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    },
+    {
+      "id": "torrey",
+      "name": "Torrey Pines Beach",
+      "mop": "D0587",
+      "lat": 32.93109,
+      "lon": -117.26785,
+      "shoreNormal": 264.5,
+      "sizeFt": [2, 6],
+      "note": "South end of the frame, inshore of the Torrey buoy.",
+      "tideNote": "prefers mid. Tide is a tie-breaker, not the session.",
+      "tidePref": { "band": "mid", "phase": null, "longPeriodOkHigh": false }
+    }
+  ]
+}
